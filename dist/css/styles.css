@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Nunito");
 @import url("https://fonts.googleapis.com/css?family=Nunito");
+@import url("https://fonts.googleapis.com/css?family=Nunito");
 * {
   font-family: 'Nunito', sans-serif;
 }
@@ -37,7 +38,7 @@
 }
 
 .button.round.filled p {
-  color: #4C4F53;
+  color: grey;
 }
 
 .button.round p {
@@ -62,12 +63,12 @@
   margin: auto;
   text-align: center;
   line-height: 45px;
-  color: #4C4F53;
+  color: grey;
   font-size: 14px;
 }
 
 .button.square i {
-  color: #4C4F53;
+  color: grey;
   font-weight: 900;
   margin: auto 125px;
   vertical-align: middle;
@@ -96,8 +97,8 @@
 }
 
 .button.square.hover {
-  background-color: #F5D67C;
-  border: 3px solid #F5D67C;
+  background-color: gold;
+  border: 3px solid gold;
 }
 
 .button.square.hover p {
@@ -159,7 +160,7 @@
 }
 
 .button.square.grey {
-  background-color: #4C4F53;
+  background-color: grey;
   border: 3px solid gold;
 }
 
@@ -177,7 +178,7 @@
 }
 
 .button.square i {
-  color: #4C4F53;
+  color: grey;
   font-weight: 900;
   margin: auto 100px;
   font-size: 25px;
@@ -190,14 +191,31 @@
 .button.square i.goldcheck {
   color: gold;
 }
-#calendar-head {
+#calendar-head,
+.calendar-row {
   display: flex;
   justify-content: space-around;
 }
 
-.calendar-row {
+#calendar-head p,
+.calendar-row p {
+  width: 100%;
+  text-align: center;
+}
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+.calendar-header {
   display: flex;
+  width: 250px;
+  background-color: grey;
   justify-content: space-around;
+  color: white;
+}
+
+.arrow {
+  cursor: pointer;
 }
 * {
   font-family: 'Nunito', sans-serif;
